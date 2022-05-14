@@ -1,3 +1,59 @@
 @tailwind base;
+
+@layer base {
+  h1 {
+    @apply mb-24 text-8xl font-semibold;
+  }
+  h2 {
+    @apply mb-16 text-6xl font-medium;
+  }
+  h3 {
+    @apply text-4xl;
+  }
+  h3 {
+    @apply text-2xl;
+  }
+  h4 {
+    @apply text-xl;
+  }
+
+  p {
+    @apply text-2xl;
+  }
+}
+
 @tailwind components;
+
 @tailwind utilities;
+
+::selection {
+  @apply bg-green-200;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply rounded-sm bg-slate-100;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-200;
+}
+
+:focus-visible {
+  outline: none;
+}
+
+.image-mask {
+  mask-image: linear-gradient(180deg, white 20%, transparent);
+}
