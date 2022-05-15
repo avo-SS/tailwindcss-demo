@@ -5,7 +5,7 @@ import ChevronRight from '../public/svgs/chevron-right.svg';
 import ChevronLeft from '../public/svgs/chevron-left.svg';
 
 function Navigation() {
-  const lastPageNum = 4;
+  const lastPageNum = 6;
   const router = useRouter();
   const [section, setSection] = useState(0);
   const number = parseInt(router.route.slice('/')[1]);
@@ -74,15 +74,13 @@ function Navigation() {
       <nav className='fixed bottom-0 mx-auto flex w-full items-center justify-center gap-6 rounded-full px-14 py-8 opacity-0 duration-500  hover:opacity-100'>
         <button
           onClick={() => changePage('prev')}
-          className='rounded-full bg-white p-2 shadow-md duration-300 hover:cursor-pointer hover:bg-teal-300'
-        >
+          className='rounded-full bg-white p-2 shadow-md duration-300 hover:cursor-pointer hover:bg-teal-300'>
           <ChevronLeft className='h-6 w-6' />
         </button>
         <PageNumber lastPageNum={lastPageNum} />
         <button
           onClick={() => changePage('next')}
-          className='rounded-full bg-white p-2 shadow-md duration-300 hover:cursor-pointer hover:bg-teal-300'
-        >
+          className='rounded-full bg-white p-2 shadow-md duration-300 hover:cursor-pointer hover:bg-teal-300'>
           <ChevronRight className='h-6 w-6' />
         </button>
       </nav>
@@ -101,15 +99,13 @@ function Navigation() {
           opacity-0
           duration-500
           hover:opacity-100
-          '
-        >
+          '>
           <span
             className='
             font-space-mono
             text-2xl
           text-teal-700
-            '
-          >
+            '>
             {isNaN(number) ? 'FIRST' : 'PREV'}
           </span>
         </button>
@@ -127,15 +123,13 @@ function Navigation() {
           opacity-0
           duration-500
           hover:opacity-100
-          '
-        >
+          '>
           <span
             className='
             font-space-mono
             text-2xl
           text-teal-800
-            '
-          >
+            '>
             {number === lastPageNum ? 'END' : 'NEXT'}
           </span>
         </button>

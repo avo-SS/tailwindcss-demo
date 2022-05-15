@@ -24,10 +24,10 @@ const Four = () => {
           </ListItem>
           <ListItem>
             <p className='text-3xl'>More productive </p>
-            <p>Working exclusively in one file</p>
             <p>
-              What About{' '}
-              <span className='font-bold'>Separation of Concerns?</span>
+              Working exclusively in one file, but what about
+              <br />
+              <span className='font-bold italic'>Separation of Concerns?</span>
             </p>
           </ListItem>
         </List>
@@ -60,7 +60,7 @@ const Four = () => {
             href='https://vuejs.org/guide/scaling-up/sfc.html#what-about-separation-of-concerns'
             target='_blank'
             rel='noopener noreferrer'
-            className='hover: mt-6 text-2xl font-semibold text-[#41b883] underline underline-offset-auto'
+            className='mt-6 text-2xl font-semibold tracking-wide text-[#41b883] underline underline-offset-auto hover:no-underline'
           >
             - Vue.js
           </a>
@@ -91,8 +91,12 @@ const Four = () => {
               styling
             </p>
             <p>
-              - Hover, focus, and other states. First, last, even, odd.
-              Pseudo-classes.
+              - Selectors
+              <List small>
+                <ListItem small>Hover, focus, and other states</ListItem>
+                <ListItem small>First, last, even, odd</ListItem>
+                <ListItem small>Pseudo-classes</ListItem>
+              </List>
             </p>
           </ListItem>
         </List>

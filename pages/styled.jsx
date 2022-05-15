@@ -17,12 +17,12 @@ const ConditionalButton = styled.button(({ isRed, className }) => [
     transition
     transition-duration[300ms]
   `,
-  className
+  className,
 ]);
 
 const styles = {
   yellow: tw`bg-yellow-200 hover:bg-yellow-400 py-2 px-8 rounded-md shadow-lg transition`,
-  orange: tw`bg-indigo-200`
+  orange: tw`bg-indigo-200`,
 };
 
 const Styled = () => {

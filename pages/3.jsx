@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Section from '../components/layout/Section';
 import TailwindMark from '../public/svgs/tw-mark.svg';
 import Bootstrap from '../components/svgs/Bootstrap';
