@@ -1,14 +1,15 @@
 import Section from '../components/layout/Section';
 import ListItem from '../components/ListItem';
+import List from '../components/List';
 
 const One = () => {
   return (
-    <Section className='mx-auto max-w-3xl'>
+    <Section>
       <div className='mb-12 flex items-center gap-4'>
         <h1 className='mb-0'>Info</h1>
         <span className='text-7xl'>💡</span>
       </div>
-      <ul className='flex flex-col gap-12 pl-14 font-medium text-gray-700'>
+      <List>
         <ListItem>
           <p>
             Most of the content from this presentation is taken from Tailwind's
@@ -23,7 +24,7 @@ const One = () => {
             through them at the end.
           </p>
         </ListItem>
-      </ul>
+      </List>
     </Section>
   );
 };

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Section from '../components/layout/Section';
 import TailwindMark from '../public/svgs/tw-mark.svg';
 import Bootstrap from '../components/svgs/Bootstrap';
@@ -6,8 +7,8 @@ import Chakra from '../components/svgs/Chakra';
 import Bulma from '../components/svgs/Bulma';
 import FastX from '../components/svgs/FastX';
 
-const HighlightSpan = ({ text }) => {
-  return <span className='text-cyan-500'>{text}</span>;
+const Highlight = ({ children }) => {
+  return <span className='italic text-cyan-500'>{children}</span>;
 };
 
 const Three = () => {
@@ -33,18 +34,28 @@ const Three = () => {
         <h2>Tailwind is</h2>
         <div className='relative mt-12 max-w-3xl translate-x-10'>
           <TailwindMark className='absolute -left-20 -top-4 ml-6 mb-2 inline-block w-12 rotate-[120deg]' />
-          <quote className='text-3xl font-medium italic '>
+          <quote className='text-3xl font-medium'>
             A utility-first CSS framework packed with classes like{' '}
-            <HighlightSpan text='flex' />, <HighlightSpan text='pt-4' />,{' '}
-            <HighlightSpan text='text-center' /> and{' '}
-            <HighlightSpan text='rotate-90' /> that can be composed to build any
+            <Highlight> flex</Highlight>,<Highlight> pt-4</Highlight>,
+            <Highlight> text-center</Highlight>,
+            <Highlight> rotate-90</Highlight>, that can be composed to build any
             design, directly in your markup.
           </quote>
         </div>
       </Section>
 
-      <Section>
-        <h2 className='font-space-mono'>Live coding example</h2>
+      <Section className='font-space-mono'>
+        <h2>
+          Live{' '}
+          <span className='rounded-md bg-rose-800 px-2 text-orange-300'>
+            coding
+          </span>{' '}
+          example
+        </h2>
+        <div className='flex flex-col items-center justify-center gap-20'>
+          <p className='text-3xl text-slate-700'>Style a button:</p>
+          {/* TODO button here */}
+        </div>
       </Section>
     </>
   );

@@ -10,7 +10,6 @@ export default function One() {
         <h1>
           Why look into <TailwindMark className='inline-block w-36' />
         </h1>
-        <ChevronDown className='absolute bottom-36 w-12 text-cyan-500' />
       </Section>
 
       <Section>

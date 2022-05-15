@@ -3,6 +3,9 @@ const ListItem = ({ children }) => {
     <li
       className='
         relative
+        flex
+        flex-col
+        gap-4
         before:absolute
         before:top-2
         before:-left-10
