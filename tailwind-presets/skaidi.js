@@ -3,6 +3,16 @@ module.exports = {
   presets: [],
   darkMode: 'media', // or 'class'
 
+  prefix: 'tw-', // Adding tailwind on existing project? Worried about naming collisions?
+  separator: '-', // hover: becomes hover-
+
+  corePlugins: {
+    preflight: false, // Removes base styles if set to false.
+    float: false,
+    objectFit: false,
+    objectPosition: false,
+  },
+
   //Either extend or overwrite
   theme: {
     screens: {},
