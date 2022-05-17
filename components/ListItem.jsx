@@ -14,8 +14,7 @@ const ListItem = ({ children, small }) => {
         ${small ? smallDot : largeDot}
         before:skew-x-6
       before:bg-pink-500 
-      `}
-    >
+      `}>
       {children}{' '}
     </li>
   );

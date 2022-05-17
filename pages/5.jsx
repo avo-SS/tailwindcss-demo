@@ -118,12 +118,15 @@ const Five = () => {
 
         <section className='relative h-screen w-full pt-20'>
           <div
-            className={`absolute right-80 top-40 h-3/5 w-[480px] ${imgContainer}`}>
+            className={`
+            ${!swapContent ? 'opacity-0' : ''}
+             absolute right-80 top-40 h-3/5 w-[480px] ${imgContainer}`}>
             <Image
               src='/images/cosmetic_product.jpg'
               alt='cosmetics'
               layout='fill'
               objectFit='cover'
+              priority
             />
           </div>
           <div
@@ -135,34 +138,38 @@ const Five = () => {
               alt='cosmetics'
               layout='fill'
               objectFit='cover'
+              priority
             />
           </div>
           <div
-            className={`absolute bottom-64 right-[45rem] h-1/3 w-96 ${imgContainer}`}>
+            className={`
+            ${!swapContent ? 'opacity-0' : ''}
+             absolute bottom-64 right-[45rem] h-1/3 w-96 ${imgContainer}`}>
             <Image
               src='/images/cosmetic_hand_lotion.jpg'
               alt='cosmetics'
               layout='fill'
               objectFit='cover'
+              priority
             />
           </div>
           <div
-            className={`${
-              swapContent ? 'opacity-0' : ''
-            } absolute bottom-64 right-[45rem] h-1/3 w-96 duration-700 ${imgContainer}`}>
+            className={`
+            ${swapContent ? 'opacity-0' : ''}
+            absolute bottom-64 right-[45rem] h-1/3 w-96 duration-700 ${imgContainer}`}>
             <Image
               src='/images/robot_toy_stand.jpg'
               alt='cosmetics'
               layout='fill'
               objectFit='cover'
+              priority
             />
           </div>
 
           <div className='relative mx-auto flex h-full max-w-7xl flex-col justify-center gap-12 pb-80'>
             <Blob
-              className={`absolute left-[-1500px] top-[-1000px] rotate-[350deg] scale-[60%] duration-700 dark:brightness-[40%] ${
-                swapContent ? '' : 'hue-rotate-180'
-              }`}
+              className={`absolute left-[-1500px] top-[-1000px] rotate-[350deg] scale-[60%] duration-700 dark:brightness-[40%]
+              ${!swapContent && 'hue-rotate-180'}`}
             />
             {swapContent ? (
               <h1 className='relative mb-0 font-primary text-9xl italic leading-[1.125] text-brand-dark dark:text-secondary'>
@@ -223,31 +230,39 @@ const Five = () => {
                 alt='cosmetics'
                 layout='fill'
                 objectFit='cover'
+                priority
+                className={!swapContent ? 'opacity-0' : undefined}
               />
               <Image
                 src='/images/robot_arm_cup.jpg'
-                alt='cosmetics'
+                alt='robot'
                 layout='fill'
                 objectFit='cover'
-                className={`${swapContent && 'opacity-0'} duration-700'`}
+                priority
+                className={swapContent ? 'opacity-0' : undefined}
               />
             </div>
           </div>
           <div className='mx-auto grid max-w-7xl grid-cols-2 items-center gap-8'>
             <div
-              className={`relative mx-auto h-[600px] w-[80%] ${imgContainer}`}>
+              className={`
+           
+              relative mx-auto h-[600px] w-[80%] ${imgContainer}`}>
               <Image
                 src='/images/cosmetic_face_happy.jpg'
                 alt='cosmetics'
                 layout='fill'
                 objectFit='cover'
+                priority
+                className={!swapContent ? 'opacity-0' : undefined}
               />
               <Image
                 src='/images/robot_arm_wine.jpg'
                 alt='cosmetics'
                 layout='fill'
                 objectFit='cover'
-                className={`${swapContent && 'opacity-0'} duration-700'`}
+                priority
+                className={swapContent ? 'opacity-0' : undefined}
               />
             </div>
 

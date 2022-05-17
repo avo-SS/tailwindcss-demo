@@ -23,6 +23,10 @@ const Four = () => {
             </p>
           </ListItem>
           <ListItem>
+            <p className='text-3xl'>Easier to maintain</p>
+            <p>Less CSS files to keep track of</p>
+          </ListItem>
+          <ListItem>
             <p className='text-3xl'>More productive </p>
             <p>
               Working exclusively in one file, but what about
@@ -34,7 +38,7 @@ const Four = () => {
       </Section>
 
       <Section>
-        <quote className='relative flex max-w-3xl flex-col gap-4  font-medium'>
+        <q className='relative flex max-w-3xl flex-col gap-4  font-medium before:content-none'>
           <Vue className='absolute -left-20 -top-8 h-16 w-16 rotate-12' />
           <p>
             To answer this question, it is important for us to agree that
@@ -60,11 +64,10 @@ const Four = () => {
             href='https://vuejs.org/guide/scaling-up/sfc.html#what-about-separation-of-concerns'
             target='_blank'
             rel='noopener noreferrer'
-            className='mt-6 text-2xl font-semibold tracking-wide text-[#41b883] underline underline-offset-auto hover:no-underline'
-          >
+            className='mt-6 max-w-max text-2xl font-semibold tracking-wide text-[#41b883] underline underline-offset-auto hover:no-underline'>
             - Vue.js
           </a>
-        </quote>
+        </q>
       </Section>
 
       <Section>
@@ -73,13 +76,10 @@ const Four = () => {
             <p className='text-3xl'>"Safe"</p>
             <p>
               No need to worry about breaking something else if you remove some
-              classes as these are all utilities and they reside in the same
-              component.
+              classes since they are all utility classes.
+              <br />
+              Also If you remove the component, the CSS goes with it.
             </p>
-          </ListItem>
-          <ListItem>
-            <p className='text-3xl'>Easier to maintain</p>
-            <p>Less CSS files to keep track of</p>
           </ListItem>
           <ListItem>
             <p className='text-3xl'>
@@ -90,14 +90,18 @@ const Four = () => {
               - Responsive design, no media queries available when inline
               styling
             </p>
-            <p>
-              - Selectors
-              <List small>
-                <ListItem small>Hover, focus, and other states</ListItem>
-                <ListItem small>First, last, even, odd</ListItem>
-                <ListItem small>Pseudo-classes</ListItem>
-              </List>
-            </p>
+            <p>- Selectors</p>
+            <List small>
+              <ListItem small>
+                <p>Hover, focus, and other states</p>
+              </ListItem>
+              <ListItem small>
+                <p>First, last, even, odd</p>
+              </ListItem>
+              <ListItem small>
+                <p>Pseudo classes/elements</p>
+              </ListItem>
+            </List>
           </ListItem>
         </List>
       </Section>

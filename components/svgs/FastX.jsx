@@ -8,8 +8,7 @@ const FastX = ({ className }) => {
       viewBox='0 0 280 279'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className={className}
-    >
+      className={className}>
       <path
         d='M139.949 278.266C216.79 278.266 279.082 215.974 279.082 139.133C279.082 62.2919 216.79 0 139.949 0C63.1083 0 0.816406 62.2919 0.816406 139.133C0.816406 215.974 63.1083 278.266 139.949 278.266Z'
         fill='url(#paint0_linear_105_32)'
@@ -33,10 +32,9 @@ const FastX = ({ className }) => {
           y1='278'
           x2='147.501'
           y2='5.00001'
-          gradientUnits='userSpaceOnUse'
-        >
+          gradientUnits='userSpaceOnUse'>
           <stop />
-          <stop offset='1' stop-color='#494949' />
+          <stop offset='1' stopColor='#494949' />
         </linearGradient>
       </defs>
     </svg>

@@ -8,8 +8,7 @@ const Chakra = ({ className }) => {
       viewBox='0 0 259 259'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className={className}
-    >
+      className={className}>
       <circle
         cx='129.951'
         cy='129.266'
@@ -27,10 +26,9 @@ const Chakra = ({ className }) => {
           y1='0.265625'
           x2='129.951'
           y2='258.266'
-          gradientUnits='userSpaceOnUse'
-        >
-          <stop stop-color='#7ED8E0' />
-          <stop offset='1' stop-color='#1EB6A9' />
+          gradientUnits='userSpaceOnUse'>
+          <stop stopColor='#7ED8E0' />
+          <stop offset='1' stopColor='#1EB6A9' />
         </linearGradient>
       </defs>
     </svg>

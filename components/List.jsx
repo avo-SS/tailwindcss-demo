@@ -1,8 +1,8 @@
-const List = ({ children, small }) => {
+const List = ({ children, small, className = '' }) => {
   return (
     <ul
       className={`
-      mx-auto
+      ${small ? '' : ' mx-auto'}
       flex
       max-w-3xl
       flex-col
@@ -10,8 +10,8 @@ const List = ({ children, small }) => {
       pl-14
       font-medium
       text-gray-700
-      `}
-    >
+      ${className}
+      `}>
       {children}
     </ul>
   );

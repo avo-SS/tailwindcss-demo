@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
 
       <div className='image-mask absolute inset-0 bg-[url(/images/dot_grid.png)] bg-center' />
 
-      <main className='relative px-12'>{children}</main>
+      <main className='relative px-12 selection:bg-green-200'>{children}</main>
 
       <Navigation />
     </div>

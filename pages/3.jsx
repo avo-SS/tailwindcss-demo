@@ -33,13 +33,13 @@ const Three = () => {
         <h2>Tailwind is</h2>
         <div className='relative mt-12 max-w-3xl translate-x-10'>
           <TailwindMark className='absolute -left-20 -top-4 ml-6 mb-2 inline-block w-12 rotate-[120deg]' />
-          <quote className='text-3xl font-medium'>
+          <q className='text-3xl font-medium'>
             A utility-first CSS framework packed with classes like{' '}
             <Highlight> flex</Highlight>,<Highlight> pt-4</Highlight>,
             <Highlight> text-center</Highlight>,
             <Highlight> rotate-90</Highlight>, that can be composed to build any
             design, directly in your markup.
-          </quote>
+          </q>
         </div>
       </Section>
 
@@ -53,6 +53,7 @@ const Three = () => {
         </h2>
         <div className='flex flex-col items-center justify-center gap-20'>
           <p className='text-3xl text-slate-700'>Style a button:</p>
+
           {/* TODO button here */}
         </div>
       </Section>

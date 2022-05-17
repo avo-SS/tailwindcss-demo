@@ -19,7 +19,7 @@ const PageNumber = ({ lastPageNum }) => {
   };
 
   return (
-    <div className='w-8 min-w-max text-center text-2xl font-bold'>
+    <div className='w-20 min-w-max text-center text-2xl font-bold'>
       <p className='ordinal'>
         {isNaN(pageNumber)
           ? 'Intro'

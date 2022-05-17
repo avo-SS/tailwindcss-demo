@@ -1,14 +1,20 @@
-import { useEffect, useCallback, useState } from 'react';
+import { useEffect, useCallback, useState, useRef } from 'react';
 import { useRouter } from 'next/router';
 import PageNumber from './PageNumber';
 import ChevronRight from '../public/svgs/chevron-right.svg';
 import ChevronLeft from '../public/svgs/chevron-left.svg';
 
 function Navigation() {
-  const lastPageNum = 6;
+  const lastPageNum = 9;
   const router = useRouter();
   const [section, setSection] = useState(0);
   const number = parseInt(router.route.slice('/')[1]);
+  const nextBtnRef = useRef();
+  const prevBtnRef = useRef();
+
+  useEffect(() => {
+    setSection(0);
+  }, [number]);
 
   const changePage = (direction) => {
     if (direction === 'next') {
@@ -59,6 +65,14 @@ function Navigation() {
         e.preventDefault();
         setSection((prev) => cycleSections(prev, 'down'));
         break;
+
+      case 'ArrowLeft':
+        prevBtnRef.current.click();
+        break;
+
+      case 'ArrowRight':
+        nextBtnRef.current.click();
+        break;
     }
   }, []);
 
@@ -69,72 +83,25 @@ function Navigation() {
     };
   }, [handleKeydown]);
 
+  const btn = `rounded-full bg-white p-2 shadow-md transition-colors duration-300 hover:cursor-pointer hover:bg-teal-300`;
+  const disabled = `pointer-events-none opacity-30 shadow-none`;
+
   return (
-    <>
-      <nav className='fixed bottom-0 mx-auto flex w-full items-center justify-center gap-6 rounded-full px-14 py-8 opacity-0 duration-500  hover:opacity-100'>
-        <button
-          onClick={() => changePage('prev')}
-          className='rounded-full bg-white p-2 shadow-md duration-300 hover:cursor-pointer hover:bg-teal-300'>
-          <ChevronLeft className='h-6 w-6' />
-        </button>
-        <PageNumber lastPageNum={lastPageNum} />
-        <button
-          onClick={() => changePage('next')}
-          className='rounded-full bg-white p-2 shadow-md duration-300 hover:cursor-pointer hover:bg-teal-300'>
-          <ChevronRight className='h-6 w-6' />
-        </button>
-      </nav>
-      <nav>
-        <button
-          onClick={() => changePage('prev')}
-          className='
-          fixed
-          top-0
-          left-0
-          h-screen
-          w-56
-          bg-gradient-to-r
-          from-slate-800/30
-          to-transparent
-          opacity-0
-          duration-500
-          hover:opacity-100
-          '>
-          <span
-            className='
-            font-space-mono
-            text-2xl
-          text-teal-700
-            '>
-            {isNaN(number) ? 'FIRST' : 'PREV'}
-          </span>
-        </button>
-        <button
-          onClick={() => changePage('next')}
-          className='
-          fixed
-          top-0
-          right-0
-          h-screen
-          w-56
-          bg-gradient-to-l
-          from-slate-800/30
-          to-transparent
-          opacity-0
-          duration-500
-          hover:opacity-100
-          '>
-          <span
-            className='
-            font-space-mono
-            text-2xl
-          text-teal-800
-            '>
-            {number === lastPageNum ? 'END' : 'NEXT'}
-          </span>
-        </button>
-      </nav>
-    </>
+    <nav className='fixed bottom-0 mx-auto flex w-full items-center justify-center gap-6 rounded-full pb-20 pt-10 opacity-0 duration-500  hover:opacity-100'>
+      <button
+        ref={prevBtnRef}
+        onClick={() => changePage('prev')}
+        className={`${btn} ${isNaN(number) && disabled}`}>
+        <ChevronLeft className='h-6 w-6' />
+      </button>
+      <PageNumber lastPageNum={lastPageNum} />
+      <button
+        ref={nextBtnRef}
+        onClick={() => changePage('next')}
+        className={`${btn} ${number === lastPageNum && disabled}`}>
+        <ChevronRight className='h-6 w-6' />
+      </button>
+    </nav>
   );
 }
 

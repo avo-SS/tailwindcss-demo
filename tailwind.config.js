@@ -6,8 +6,20 @@ module.exports = {
 
   darkMode: 'class',
 
-  presets: [require('./tailwind-presets/tech-preset.js')],
-  // presets: [require('./tailwind-presets/cosmetics-preset.js')],
+  // Tells the config file to include content of preset
+  presets: [
+    // ------- Design system? -------
+    // require('./fast-x-ui/colors.js')
+    // require('./fast-x-ui/typography.js')
+    // require('./fast-x-ui/spacing.js')
+
+    // ------- Projects? -------
+    // require('./memodo.js')
+    // require('./demosite.js')
+
+    require('./tailwind-presets/tech-preset.js'),
+    // require('./tailwind-presets/cosmetics-preset.js'),
+  ],
 
   theme: {
     extend: {

@@ -7,7 +7,7 @@ const imgContainer = `
     cursor-pointer
     overflow-hidden
     rounded-2xl
-    duration-300
+    duration-200
 `;
 
 const Six = () => {
@@ -54,7 +54,7 @@ const Six = () => {
       );
       setTimeout(() => {
         ref.target.parentElement.parentElement.classList.remove('z-20');
-      }, [300]);
+      }, [100]);
     }
   };
 
@@ -68,6 +68,7 @@ const Six = () => {
             layout='fill'
             objectFit='cover'
             objectPosition='top center'
+            priority
           />
         </div>
         <div onClick={(e) => handleZoom(e, 1)} className={imgContainer}>
@@ -77,6 +78,7 @@ const Six = () => {
             layout='fill'
             objectFit='cover'
             objectPosition='top'
+            priority
           />
         </div>
         <div onClick={(e) => handleZoom(e, 2)} className={imgContainer}>
@@ -86,6 +88,7 @@ const Six = () => {
             layout='fill'
             objectFit='cover'
             objectPosition='top'
+            priority
           />
         </div>
         <div onClick={(e) => handleZoom(e, 3)} className={imgContainer}>
@@ -95,6 +98,7 @@ const Six = () => {
             layout='fill'
             objectFit='cover'
             objectPosition='top'
+            priority
           />
         </div>
       </div>

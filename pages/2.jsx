@@ -14,23 +14,13 @@ export default function One() {
 
       <Section>
         <h2>FAST-X Miro</h2>
-        <div className='flex h-[800px] w-full max-w-7xl gap-12'>
-          <div className='relative w-full'>
-            <Image
-              src='/images/miro_1.png'
-              alt='miro'
-              layout='fill'
-              objectFit='contain'
-            />
-          </div>
-          <div className='relative w-full'>
-            <Image
-              src='/images/miro_2.png'
-              alt='miro'
-              layout='fill'
-              objectFit='contain'
-            />
-          </div>
+        <div className='relative h-[800px] w-full max-w-7xl'>
+          <Image
+            src='/images/miro.png'
+            alt='miro'
+            layout='fill'
+            objectFit='contain'
+          />
         </div>
       </Section>
 
@@ -40,8 +30,7 @@ export default function One() {
           <a
             href='https://nextjs.org/docs/basic-features/built-in-css-support'
             target='_blank'
-            className='relative w-full overflow-hidden rounded-xl duration-300 group-hover:shadow-lg group-hover:shadow-slate-400'
-          >
+            className='relative w-full overflow-hidden rounded-xl duration-300 group-hover:shadow-lg group-hover:shadow-slate-400'>
             <Image
               src='/images/next_tailwind.png'
               alt='next-tailwind'
@@ -59,8 +48,7 @@ export default function One() {
           <a
             href='https://2021.stateofcss.com/en-US/demographics'
             target='_blank'
-            className='relative w-full overflow-hidden rounded-xl duration-300 group-hover:shadow-lg group-hover:shadow-[#3e2f36]'
-          >
+            className='relative w-full overflow-hidden rounded-xl duration-300 group-hover:shadow-lg group-hover:shadow-[#3e2f36]'>
             <Image
               src='/images/state_of_css.png'
               alt='state of css'

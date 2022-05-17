@@ -17,6 +17,27 @@ const One = () => {
             biased.
           </p>
         </ListItem>
+        <ListItem>
+          <p>During the presentation</p>
+          <List small>
+            <ListItem small>
+              <p className='text-xl'>
+                How can this be useful in my current project?
+              </p>
+            </ListItem>
+            <ListItem small>
+              <p className='text-xl'>
+                How can this be useful in my next project?
+              </p>
+            </ListItem>
+            <ListItem small>
+              <p className='text-xl'>
+                How can this be useful for creating a flexible component
+                library?
+              </p>
+            </ListItem>
+          </List>
+        </ListItem>
 
         <ListItem>
           <p>
