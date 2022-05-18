@@ -1,12 +1,35 @@
+import Image from 'next/image';
 import Section from '../components/layout/Section';
-import Terminal from '../public/svgs/terminal.svg';
+import TailwindMark from '../public/svgs/tw-mark.svg';
+import Figma from '../public/svgs/figma.svg';
 
 const Eight = () => {
   return (
     <Section>
-      <h2>Command Line Interface (CLI)</h2>
-      <Terminal className='h-44 w-44' />
-      <h3>Build, Watch, Minify</h3>
+      <div className='flex items-center justify-center gap-24'>
+        <div className='flex flex-col items-center justify-center'>
+          <Figma className='inline-block h-36 w-28' />
+          <h3 className='font-semibold'>Design System</h3>
+        </div>
+        <p className='text-6xl'> -{'>'} </p>
+        <div className='flex flex-col items-center justify-center'>
+          <TailwindMark className='inline-block h-36 w-36' />
+          <h3 className='font-semibold'>Tailwind</h3>
+        </div>
+      </div>
+      <a
+        className='relative mt-20 h-[600px] w-full max-w-5xl cursor-pointer overflow-hidden rounded-2xl brightness-90 duration-300 hover:-translate-y-2 hover:border hover:shadow-xl hover:brightness-100'
+        href='https://www.figma.com/file/YF0Ux7pPj54v3TXsTB1Xx5/Skaidi-Designsystem---Utdanning.no?node-id=2735%3A3920'
+        target='_blank'
+        rel='noopener noreferrer'>
+        <Image
+          src='/images/skaidi.png'
+          alt='miro'
+          layout='fill'
+          objectFit='cover'
+          priority
+        />
+      </a>
     </Section>
   );
 };

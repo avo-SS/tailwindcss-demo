@@ -5,7 +5,7 @@ import ChevronRight from '../public/svgs/chevron-right.svg';
 import ChevronLeft from '../public/svgs/chevron-left.svg';
 
 function Navigation() {
-  const lastPageNum = 11;
+  const lastPageNum = 12;
   const router = useRouter();
   const [section, setSection] = useState(0);
   const number = parseInt(router.route.split('/')[1]);

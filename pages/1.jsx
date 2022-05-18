@@ -1,49 +1,33 @@
+import React from 'react';
 import Section from '../components/layout/Section';
-import ListItem from '../components/ListItem';
 import List from '../components/List';
+import ListItem from '../components/ListItem';
 
 const One = () => {
   return (
     <Section>
-      <div className='mb-12 flex items-center gap-4'>
-        <h1 className='mb-0'>Info</h1>
-        <span className='text-7xl'>💡</span>
-      </div>
-      <List>
+      <h2>Agenda</h2>
+      <List className='gap-3'>
         <ListItem>
-          <p>
-            Most of the content from this presentation is taken from Tailwind's
-            official website/documentation, and therefore it may be a little bit
-            biased.
-          </p>
+          <p>Info</p>
         </ListItem>
         <ListItem>
-          <p>During the presentation</p>
-          <List small>
-            <ListItem small>
-              <p className='text-xl'>
-                How can this be useful in my current project?
-              </p>
-            </ListItem>
-            <ListItem small>
-              <p className='text-xl'>
-                How can this be useful in my next project?
-              </p>
-            </ListItem>
-            <ListItem small>
-              <p className='text-xl'>
-                How can this be useful for creating a flexible component
-                library?
-              </p>
-            </ListItem>
-          </List>
+          <p>Why Tailwind</p>
         </ListItem>
-
         <ListItem>
-          <p>
-            Questions 🤔? Write them down so you don't forget, we will go
-            through them at the end.
-          </p>
+          <p>What is Tailwind</p>
+        </ListItem>
+        <ListItem>
+          <p>Core concepts</p>
+        </ListItem>
+        <ListItem>
+          <p>Features</p>
+        </ListItem>
+        <ListItem>
+          <p>Summary</p>
+        </ListItem>
+        <ListItem>
+          <p>Q & A</p>
         </ListItem>
       </List>
     </Section>
