@@ -54,8 +54,7 @@ const Eleven = () => {
             <Row>
               <Cell>
                 <B>Faster CSS Styling Process</B>
-                Tailwind provides thousands of built-in classes, reducing time
-                spent figuring out class names.
+                Tailwind provides thousands of built-in classes.
               </Cell>
               <Cell>
                 <B red>Additional learning curve</B>
