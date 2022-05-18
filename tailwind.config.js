@@ -4,7 +4,7 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
 
-  darkMode: 'class',
+  darkMode: 'class', // 'media'  -> media prefers-color-scheme
 
   // Tells the config file to include content of preset
   presets: [

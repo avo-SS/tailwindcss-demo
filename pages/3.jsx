@@ -52,9 +52,8 @@ const Three = () => {
           example
         </h2>
         <div className='flex flex-col items-center justify-center gap-20'>
-          <p className='text-3xl text-slate-700'>Style a button:</p>
-
-          {/* TODO Red button with shadow, hover and active state */}
+          <p className='text-3xl text-gray-500'>Style a button:</p>
+          {/* TODO Red button with shadow, hover and active states that changes color on different screen sizes */}
         </div>
       </Section>
     </>
