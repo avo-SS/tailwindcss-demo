@@ -54,7 +54,7 @@ const Three = () => {
         <div className='flex flex-col items-center justify-center gap-20'>
           <p className='text-3xl text-slate-700'>Style a button:</p>
 
-          {/* TODO button here */}
+          {/* TODO Red button with shadow, hover and active state */}
         </div>
       </Section>
     </>

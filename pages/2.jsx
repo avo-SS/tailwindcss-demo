@@ -1,13 +1,12 @@
 import Image from 'next/image';
 import Section from '../components/layout/Section';
 import TailwindMark from '../public/svgs/tw-mark.svg';
-import ChevronDown from '../public/svgs/chevron-down.svg';
 
 export default function One() {
   return (
     <>
       <Section>
-        <h1>
+        <h1 className='text-center'>
           Why look into <TailwindMark className='inline-block w-36' />
         </h1>
       </Section>
