@@ -101,8 +101,8 @@ const Eleven = () => {
               </Cell>
               <Cell>
                 <B red>Missing features</B>
-                Tailwind isn't always up-to-date with newly released CSS
-                features.
+                Tailwind isn't always up-to-date with bleeding-edge, newly
+                released CSS features. But will update in a short time.
               </Cell>
             </Row>
             <Row>
