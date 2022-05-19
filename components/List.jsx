@@ -1,4 +1,4 @@
-const List = ({ children, small, className = '' }) => {
+const List = ({ children, small, tight, className = '' }) => {
   return (
     <ul
       className={`

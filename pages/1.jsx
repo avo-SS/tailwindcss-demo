@@ -7,7 +7,7 @@ const One = () => {
   return (
     <Section>
       <h2>Agenda</h2>
-      <List className='gap-3'>
+      <List small>
         <ListItem>
           <p>Info</p>
         </ListItem>
