@@ -95,7 +95,8 @@ yarn dev
 
 ## 8. Figma to Tailwind  <img src="./public/svgs/tw-mark.svg" width="24"/> with [Skaidi Design System](https://design.utdanning.no/) as an example
 
-![image](https://user-images.githubusercontent.com/96238309/170778953-6ed50d1f-1825-43d2-92dc-f52b7115b3a9.png)
+![image](https://user-images.githubusercontent.com/96238309/170780810-b3c31ae4-19b2-4150-bb8e-5d2b308d5ca6.png)
+
 
 ## 9. Command Line Interface
 
