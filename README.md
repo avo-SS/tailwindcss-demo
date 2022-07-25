@@ -5,7 +5,7 @@
 This presentation is only available as code, but for those that can't run it locally this README will go through the slides as if it was a PowerPoint. 
 
 
-### Run presentation locally or skip to [presentation section](https://github.com/avo-SS/tailwindcss-demo/edit/main/README.md#presentation):
+### Run presentation locally or skip to [presentation section](https://github.com/avo-SS/tailwindcss-demo#presentation):
 
 #### Basic commands to get started
 
